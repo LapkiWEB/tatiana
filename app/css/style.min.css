@@ -103,7 +103,7 @@
   display: none;
 }
 @charset "UTF-8";
-.diplomas__title, .video__title, .about__item-text, .price__text, .price__title, .contacts__text, .problems__text, .problems__main-title, .problems__title, .onebonus__item-price,
+.events__item-text, .events__item-title, .events__item-img--data, .diplomas__title, .video__title, .about__item-text, .price__text, .price__title, .contacts__text, .problems__text, .problems__main-title, .problems__title, .onebonus__item-price,
 .twobonus__item-price, .adv__text, .adv__title, .adv__number, .screen__title, .screen__name, .menu__list, .main-btn, .title, html,
 body {
   font-family: "PoiretOne-Regular", sans-serif;
@@ -1151,17 +1151,76 @@ body {
 .diplomas__inner {
   max-width: 1700px;
   width: 100%;
-  padding: 0 185px;
+  padding: 0 200px;
 }
 
 .diplomas__item {
   margin: 0 15px;
+  margin-bottom: 50px;
 }
 
 .diplomas__item-box {
   height: 100%;
 }
 .diplomas__item-box img {
+  margin: 0 auto;
+}
+
+.events__title {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.events__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.events__item {
+  max-width: 375px;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.events__item-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 375px;
+  height: 290px;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 3px;
+}
+
+.events__item-img--data {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 32px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 3px;
+}
+
+.events__item-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.events__item-text {
+  font-size: 20px;
+}
+
+.events-btn {
   margin: 0 auto;
 }
 
@@ -1326,6 +1385,18 @@ body {
   }
   .about__item-painting .about__item-text {
     padding-bottom: 140px;
+  }
+  .events__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .events__item {
+    max-width: 500px;
+  }
+  .events__item-img {
+    max-width: 500px;
   }
 }
 @media (max-width: 1450px) {
@@ -1695,6 +1766,9 @@ body {
   .diplomas__inner {
     padding: 0;
   }
+  .events__item {
+    margin-right: 0;
+  }
 }
 @media (max-width: 900px) {
   .problems__item {
@@ -1881,6 +1955,9 @@ body {
   .diplomas__title {
     margin-bottom: 30px;
   }
+  .diplomas__item {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 700px) {
   .title {
@@ -1983,6 +2060,18 @@ body {
   }
   .video__wrapper {
     margin-bottom: 30px;
+  }
+  .events__title {
+    margin-bottom: 30px;
+  }
+  .events__item-title {
+    font-size: 24px;
+  }
+  .events {
+    padding: 30px;
+  }
+  .events__item-img--data {
+    font-size: 24px;
   }
 }
 @media (max-width: 600px) {
