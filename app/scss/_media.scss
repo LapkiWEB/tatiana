@@ -929,6 +929,18 @@
     height: 360px;
     bottom: -85px;
   }
+
+  .video {
+    padding: 30px 20px;
+  }
+
+  .video__title {
+    margin-bottom: 30px;
+  }
+
+  .video__wrapper {
+    margin-bottom: 30px;
+  }
 }
 
 @media(max-width: 600px) {
@@ -1077,6 +1089,10 @@
   .about__item-text {
     padding: 0 15px;
     padding-top: 30px;
+  }
+
+  .video {
+    padding: 30px 15px;
   }
 }
 

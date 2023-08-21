@@ -671,7 +671,46 @@
 }
 // end section about
 
+// start section video
+.video {
+  background-image: url('../images/content/video-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 40px;
 
+}
+
+.video__title {
+  margin: 0px auto;
+  width: fit-content;
+  color: $white;
+  @extend %Poiret;
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.video__wrapper {
+  // min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.video__item {
+  max-width: 889px;
+  width: 100%;
+  height: auto;
+}
+
+.video-btn {
+  margin: 0 auto;
+}
+
+// end section video
 
 
 
