@@ -1,0 +1,158 @@
+html,
+body {
+  height: 100%;
+  @extend %Poiret;
+  color: $grey;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0 auto;
+  background-color: $white;
+  font-size: 24px;
+  line-height: normal;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $grey;
+  position: relative;
+  // border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  // background-color: $green;
+  background: $white;
+  border-radius: 5px;
+  border: 1px solid $grey;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1886px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.title {
+  @extend %Poiret;
+  font-size: 48px;
+  line-height: normal;
+  margin-bottom: 30px;
+  max-width: fit-content;
+}
+
+.social {
+  position: relative;
+  z-index: 10;
+}
+
+.social__list {
+  display: inline-block;
+
+  &+.social__list {
+    margin-left: 50px;
+  }
+}
+
+
+.main-btn {
+  padding: 10px 48px;
+  font-size: 20px;
+  line-height: normal;
+  @extend %Poiret;
+  border-radius: 3px;
+  border: 1px solid $grey;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.black-btn {
+  color: $white;
+  background-color: $grey;
+}
+
+.white-btn {
+  color: $grey;
+  background-color: $white;
+}
+
+
+
+.menu__btn {
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
+  // background-color: $grey;
+  padding-top: 4px !important;
+  border-radius: 5px;
+
+  &.active {
+    .row {
+      height: 2px;
+
+    }
+
+    .row1 {
+      transform: rotate(45deg);
+      position: relative;
+      top: 7px;
+      background-color: $white;
+      transition: all .5s ease 0s;
+    }
+
+    .row2 {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -1px;
+      background-color: $white;
+      transition: all .5s ease 0s;
+    }
+
+    .row3 {
+      opacity: 0;
+    }
+  }
+}
+
+.row {
+  width: 30px;
+  background-color: $grey;
+  height: 2px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  transition: all .3s;
+  margin: 6px auto;
+
+}
+
+.row3 {
+  width: 20px;
+  margin-left: 20px;
+}
+
+.mobil__social {
+  display: none;
+}

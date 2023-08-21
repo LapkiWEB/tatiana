@@ -1,0 +1,28 @@
+// УБЕРИ SANS-SERIF ОН МОЖЕТ ЛОМАТЬ ШРИФТ
+// font-weight: normal; font-style: normal; !!!! Иначе ломается на ios!!!!
+
+
+@font-face {
+  font-family: 'PoiretOne-Regular';
+  src: url('../fonts/PoiretOne-Regular.eot');
+  src: url('../fonts/PoiretOne-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PoiretOne-Regular.otf') format('otf'),
+    url('../fonts/PoiretOne-Regular.svg#PoiretOne-Regular') format('svg'),
+    url('../fonts/PoiretOne-Regular.woff') format('woff'),
+    url('../fonts/PoiretOne-Regular.woff2') format('woff2'),
+    url('../fonts/PoiretOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BadScript-Regular';
+  src: url('../fonts/BadScript-Regular.eot');
+  src: url('../fonts/BadScript-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BadScript-Regular.otf') format('otf'),
+    url('../fonts/BadScript-Regular.svg#BadScript-Regular') format('svg'),
+    url('../fonts/BadScript-Regular.woff') format('woff'),
+    url('../fonts/BadScript-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
