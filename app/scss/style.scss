@@ -514,7 +514,6 @@
 
 
 // start section contacts
-.contacts {}
 
 .contacts__text {
   margin-bottom: 100px;
@@ -641,7 +640,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.about__item-img{
+
+.about__item-img {
   background-image: url('../images/content/about-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -649,14 +649,17 @@
   width: 100%;
   height: auto;
 }
-.about__item-text{
+
+.about__item-text {
   margin: 50px;
   font-size: 20px;
   @extend %Poiret;
 }
-.about__item-painting{
+
+.about__item-painting {
   position: relative;
-  &::before{
+
+  &::before {
     position: absolute;
     content: '';
     width: 585px;
@@ -669,11 +672,11 @@
     bottom: 0;
   }
 }
+
 // end section about
 
 // start section video
 .video {
-  background-image: url('../images/content/video-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -711,6 +714,51 @@
 }
 
 // end section video
+
+// start section diplomas
+.diplomas {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0px;
+}
+
+.diplomas__title {
+  margin: 0px auto;
+  width: fit-content;
+  color: $white;
+  @extend %Poiret;
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.diplomas__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.diplomas__inner {
+  max-width: 1700px;
+  width: 100%;
+  padding: 0 185px;
+}
+
+.diplomas__item {
+  margin: 0 15px;
+}
+
+.diplomas__item-box {
+  height: 100%;
+  img {
+    margin: 0 auto;
+  }
+}
+
+
+// end section diplomas
 
 
 

@@ -156,3 +156,66 @@ body {
 .mobil__social {
   display: none;
 }
+
+
+
+.slick-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  button {
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 20px 10px;
+    font-size: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+}
+
+.slick-dots li[class="slick-active"] button {
+  // @include form-style--btn;
+
+  background-color: $white;
+
+}
+
+
+
+// КНОПКИ СЛАЙДЕР
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  // left: -80px;
+  left: 0;
+  z-index: 1;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  // right: -85px;
+  right: 0;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  .arrow__wrapper {
+    img {
+      width: 185px;
+      height: 100px;
+    }
+  }
+}
+
+// КНОПКИ СЛАЙДЕР
