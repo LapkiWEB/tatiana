@@ -23,23 +23,50 @@ $('.diplomas__inner').slick({
     focusOnSelect: true,
     speed: 500,
     responsive: [{
-        breakpoint: 1300,
+        breakpoint: 100,
         settings: {
           slidesToShow: 1,
         }
       },
       {
-        breakpoint: 1000,
+        breakpoint: 100,
         settings: {
-         arrow: false,
+         arrows: false,
         slidesToShow: 1,
         }
       }
     ]
   });
 
+  $('.reviews__slider-inner').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false, 
+    dotsClass: 'slick-dots',
+    focusOnSelect: true,
+    speed: 500,
+    responsive: [{
+        breakpoint: 1300,
+        settings: {
+          // slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+        //  arrow: false,
+        // slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
+
 
   });
+
+  
 
 
 

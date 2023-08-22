@@ -103,7 +103,7 @@
   display: none;
 }
 @charset "UTF-8";
-.events__item-text, .events__item-title, .events__item-img--data, .diplomas__title, .video__title, .about__item-text, .price__text, .price__title, .contacts__text, .problems__text, .problems__main-title, .problems__title, .onebonus__item-price,
+.reviews__slider-item-text, .reviews__item-title, .events__item-text, .events__item-title, .events__item-img--data, .diplomas__title, .video__title, .about__item-text, .price__text, .price__title, .contacts__text, .problems__text, .problems__main-title, .problems__title, .onebonus__item-price,
 .twobonus__item-price, .adv__text, .adv__title, .adv__number, .screen__title, .screen__name, .menu__list, .main-btn, .title, html,
 body {
   font-family: "PoiretOne-Regular", sans-serif;
@@ -361,6 +361,14 @@ body {
 
 .slick-dots li[class=slick-active] button {
   background-color: #ffffff;
+}
+
+.reviews__inner .slick-dots button {
+  background-color: #ffffff;
+  border: 1px solid #252525;
+}
+.reviews__inner .slick-dots li[class=slick-active] button {
+  background-color: #252525;
 }
 
 .slick-prev {
@@ -1224,6 +1232,54 @@ body {
   margin: 0 auto;
 }
 
+.reviews__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 850px;
+}
+
+.reviews__item-left {
+  padding: 50px 80px;
+  width: 50%;
+}
+
+.reviews__item-title {
+  margin-bottom: 50px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.reviews__slider-item {
+  padding: 30px;
+  border-radius: 3px;
+  border: 1px solid #252525;
+  margin: 15px;
+  max-height: 850px;
+  overflow-y: auto;
+}
+
+.reviews__slider-item-text {
+  font-size: 20px;
+  color: #252525;
+}
+
+.reviews-btn {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.reviews__item-right {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: auto;
+}
+
 @media (max-width: 1850px) {
   .screen__right {
     width: 808px;
@@ -1574,6 +1630,12 @@ body {
   .problems__item {
     padding: 70px;
   }
+  .reviews__item-left {
+    width: 60%;
+  }
+  .reviews__item-right {
+    width: 40%;
+  }
 }
 @media (max-width: 1300px) {
   .screen__right {
@@ -1652,6 +1714,27 @@ body {
   }
   .price__text-sale {
     margin-right: 30px;
+  }
+  .reviews__item-left {
+    padding: 30px 50px;
+    padding-top: 0;
+  }
+  .reviews__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: auto;
+  }
+  .reviews__item-title {
+    margin-bottom: 30px;
+  }
+  .reviews__slider-item {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 20px;
   }
 }
 @media (max-width: 1100px) {
@@ -1768,6 +1851,13 @@ body {
   }
   .events__item {
     margin-right: 0;
+  }
+  .reviews__item-left {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .reviews__slider-item {
+    max-height: 350px;
   }
 }
 @media (max-width: 900px) {
@@ -2073,6 +2163,29 @@ body {
   .events__item-img--data {
     font-size: 24px;
   }
+  .reviews__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reviews__item-left {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: block;
+  }
+  .reviews__item-right {
+    height: 100vw;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .reviews__item-title {
+    margin: 0 auto;
+  }
+  .reviews__item-left {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 @media (max-width: 600px) {
   .header__menu.active {
@@ -2200,6 +2313,10 @@ body {
   }
   .video {
     padding: 30px 15px;
+  }
+  .reviews__item-left {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 400px) {

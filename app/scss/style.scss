@@ -809,15 +809,71 @@
   font-size: 32px;
   margin-bottom: 10px;
 }
-.events__item-text{
+
+.events__item-text {
   @extend %Poiret;
   font-size: 20px;
 }
-.events-btn{
+
+.events-btn {
   margin: 0 auto;
 }
+
 // end section events
 
+// start section reviews 
+.reviews__inner {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  min-height: 850px;
+}
+
+.reviews__item-left {
+  padding: 50px 80px;
+  width: 50%;
+}
+
+.reviews__item-title {
+  @extend %Poiret;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.reviews__slider-item {
+  padding: 30px;
+  border-radius: 3px;
+  border: 1px solid $grey;
+  margin: 15px;
+  max-height: 850px;
+  // overflow-y: scroll;
+  overflow-y: auto;
+
+}
+
+.reviews__slider-item-text {
+  @extend %Poiret;
+  font-size: 20px;
+  color: $grey;
+}
+
+.reviews-btn {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.reviews__item-right {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  // height: 900px;
+  height: auto;
+}
+
+// end section reviews 
 
 
 

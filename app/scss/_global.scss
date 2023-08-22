@@ -159,33 +159,42 @@ body {
 
 
 
-.slick-dots {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  list-style: none;
+  .slick-dots {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
 
-  button {
-    background-color: transparent;
-    border: 1px solid $white;
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    margin: 20px 10px;
-    font-size: 0;
-    margin-bottom: 0;
-    cursor: pointer;
+    button {
+      background-color: transparent;
+      border: 1px solid $white;
+      border-radius: 50%;
+      height: 15px;
+      width: 15px;
+      margin: 20px 10px;
+      font-size: 0;
+      margin-bottom: 0;
+      cursor: pointer;
+    }
+  }
+
+  .slick-dots li[class="slick-active"] button {
+    background-color: $white;
+  }
+
+
+.reviews__inner {
+  .slick-dots {
+    button {
+      background-color: $white;
+      border: 1px solid $grey;
+    }
+  }
+
+  .slick-dots li[class="slick-active"] button {
+    background-color: $grey;
   }
 }
-
-.slick-dots li[class="slick-active"] button {
-  // @include form-style--btn;
-
-  background-color: $white;
-
-}
-
-
 
 // КНОПКИ СЛАЙДЕР
 .slick-prev {
