@@ -837,9 +837,9 @@
 
 .reviews__item-title {
   @extend %Poiret;
-  margin-bottom: 50px;
-  margin-left: 15px;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .reviews__slider-item {
@@ -874,6 +874,94 @@
 }
 
 // end section reviews 
+
+
+// start section questions
+.questions__title{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.questions__item {
+  padding: 30px;
+  max-width: 1338px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid $grey;
+  border-radius: 3px;
+ 
+}
+
+// .questions__wrapper {
+//   position: relative;
+//   z-index: 100;
+// }
+
+.questions__item-title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.questions__item-title--text {
+  @extend %Poiret;
+  color: $grey;
+  font-size: 32px;
+  position: relative;
+}
+
+.questions__item-title--btn.active {
+  transition: all .3s;
+  color: $grey;
+  
+  .questions__row-1 {
+    transform: rotate(45deg);
+  }
+
+  .questions__row-2 {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+}
+
+.questions__row {
+  height: 2px;
+  width: 25px;
+  border-radius: 10px;
+  margin-left: 20px;
+  transition: all .3s;
+  background-color: $grey;
+}
+
+.questions__row-1 {
+  transform: rotate(90deg);
+  position: relative;
+  top: 12px;
+}
+
+.questions__row-2 {
+  position: relative;
+  top: 10px;
+}
+
+.questions__item-text {
+  font-size: 20px;
+  line-height: 23px;
+  color: $grey;
+  padding-top: 30px;
+  display: none;
+}
+
+.questions__text-open {
+  display: block;
+}
+
+.questions-btn{
+  margin: 0 auto;
+}
+
+// end section questions
+
 
 
 

@@ -1033,7 +1033,6 @@
   }
 
   .reviews__inner {
-    // min-height: 350px !important;
     flex-wrap: wrap;
   }
 
@@ -1056,6 +1055,9 @@
   .reviews__item-left {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .questions__item-title--text{
+    font-size: 24px;
   }
 }
 
