@@ -877,10 +877,11 @@
 
 
 // start section questions
-.questions__title{
+.questions__title {
   margin: 0 auto;
   margin-bottom: 50px;
 }
+
 .questions__item {
   padding: 30px;
   max-width: 1338px;
@@ -889,7 +890,7 @@
   margin-bottom: 30px;
   border: 1px solid $grey;
   border-radius: 3px;
- 
+
 }
 
 // .questions__wrapper {
@@ -913,7 +914,7 @@
 .questions__item-title--btn.active {
   transition: all .3s;
   color: $grey;
-  
+
   .questions__row-1 {
     transform: rotate(45deg);
   }
@@ -956,13 +957,126 @@
   display: block;
 }
 
-.questions-btn{
+.questions-btn {
   margin: 0 auto;
 }
 
 // end section questions
 
+// start section application
+.application__inner {
+  display: flex;
+  justify-content: space-between;
+}
 
+.application__item {
+  width: 50%;
+}
+
+.application__item-left {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  .application__item-left--text{
+    position: absolute;
+    font-size: 24px;
+    transform: rotate(-10deg);
+    @extend %Bad;
+    right: 20px;
+    // left: 0;
+    bottom: 30%;
+    color: $white;
+    max-width: 470px;
+    width: 100%;
+  }
+}
+
+.application__item-right {
+  padding: 50px 50px;
+}
+
+.application__item-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.form {
+  // margin: 0 auto;
+  margin-bottom: 130px;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 530px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  height: 110px;
+}
+
+.form__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-right: 30px;
+}
+
+.form__item,
+.form__item-box {
+  width: 250px;
+  @extend %Poiret;
+  font-size: 18px;
+  border: 1px solid $grey;
+  border-radius: 3px;
+}
+
+.form__item-box {
+  height: 100%;
+  width: 100%;
+}
+
+.form__item-input,
+.form__item-box-text {
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  resize: none;
+}
+
+.form-btn__wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+// .form-btn {
+//   margin: 0 auto;
+// }
+.application__wrapper {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.application__contacts-box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  max-width: 565px;
+  width: 100%;
+}
+
+.application__phone,
+.application__email {
+  font-size: 24px;
+  @extend %Poiret;
+  color: $grey;
+}
+
+// end section application
 
 
 @import 'media';
