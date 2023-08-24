@@ -521,6 +521,32 @@
     padding: 50px 20px;
   }
 
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__item-1 {
+    // max-width: 800px;
+    order: 1;
+  }
+
+  .footer__item-2 {
+    max-width: 450px;
+  }
+
+  .footer__item-3 {
+    margin-top: -20px;
+  }
+
+  .footer__item-title {
+    margin-bottom: 7px;
+  }
+
+  .footer__item-social {
+    margin-bottom: 25px;
+  }
+
 }
 
 @media(max-width: 1100px) {
@@ -646,22 +672,26 @@
     height: 50vw;
   }
 
-  .application__item-title{
+  .application__item-title {
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 30px;
   }
-  .form__item{
+
+  .form__item {
     width: 250px;
   }
-  .form__item-box{
+
+  .form__item-box {
     max-width: 250px;
     width: 100%;
   }
-  .form__wrapper{
+
+  .form__wrapper {
     max-width: 530px;
   }
-  .application__wrapper{
+
+  .application__wrapper {
     justify-content: center;
   }
 }
@@ -808,6 +838,17 @@
     margin: 0 auto;
   }
 
+  .footer__inner {
+    justify-content: space-between;
+  }
+
+  .footer__item-3 {
+    order: 1;
+  }
+
+  .footer__item-2 {
+    max-width: 900px;
+  }
 
 }
 
@@ -954,6 +995,21 @@
 
   .diplomas__item {
     margin-bottom: 30px;
+  }
+
+  .footer__item-3 {
+    text-align: left;
+  }
+
+  .footer__item-contacts {
+    text-align: left;
+  }
+
+  .footer__item-2 {
+    max-width: 450px;
+  }
+    .footer__item-3{
+    order: 0;
   }
 }
 
@@ -1196,21 +1252,25 @@
     // padding-right: 0;
     margin-right: 0;
   }
-  .form__wrapper{
+
+  .form__wrapper {
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
   }
-  .form__inner{
+
+  .form__inner {
     margin-right: 0;
     max-width: 350px;
   }
-  .form__item{
+
+  .form__item {
     max-width: 350px;
     width: 100%;
     margin-bottom: 15px;
   }
-  .form__item-box{
+
+  .form__item-box {
     max-width: 350px;
     width: 100%;
     height: 150px;
@@ -1303,11 +1363,38 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .application__wrapper{
+
+  .application__wrapper {
     justify-content: flex-end;
   }
-  .application__item-right{
+
+  .application__item-right {
     padding: 30px 15px;
+  }
+  .footer{
+    padding: 30px 0;
+  }
+  .footer__item-1{
+    margin-bottom: 0;
+  }
+  .footer__item-2{
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  .footer__item-box{
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+  }
+  .footer__item-link--poliсy{
+    position: absolute;
+    bottom: -212px;
+  }
+  .footer__item-title{
+    margin-bottom: 20px;
+  }
+  .footer__item-social{
+    margin-bottom: 30px;
   }
 }
 
@@ -1321,20 +1408,24 @@
     height: 294px;
     bottom: -45px;
   }
-  .application__contacts-box{
+
+  .application__contacts-box {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     text-align: center;
   }
-  .application__phone{
+
+  .application__phone {
     width: 100%;
     margin-bottom: 20px;
   }
-  .application__email{
+
+  .application__email {
     width: 100%;
   }
-  .form{
+
+  .form {
     margin-bottom: 100px;
   }
 }
