@@ -27,7 +27,7 @@
   padding-top: 20px;
   color: $grey;
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   @extend %Poiret;
   display: inline-block;
 
@@ -45,6 +45,7 @@
 .connection {
 
   font-size: 20px;
+  line-height: 26px;
   max-width: 220px;
   width: 100%;
   padding: 0 10px;
@@ -66,7 +67,7 @@
 
 // start section screen
 .screen {
-  margin-top: -120px;
+  margin-top: -125px;
 
 }
 
@@ -84,6 +85,7 @@
 
 .screen__name {
   font-size: 40px;
+  line-height: 46px;
   line-height: normal;
   @extend %Poiret;
   margin-bottom: 10px;
@@ -93,6 +95,7 @@
 .screen__title {
   @extend %Poiret;
   font-size: 96px;
+  line-height: 102px;
   line-height: normal;
   color: $grey;
   margin-bottom: 50px;
@@ -141,6 +144,7 @@
 .screen__item-center--text {
   @extend %Bad;
   font-size: 36px;
+  // line-height: 42px;
   font-weight: 400;
   color: $white;
   transform: rotate(-10deg);
@@ -172,6 +176,7 @@
 .offer__title {
   @extend %Bad;
   font-size: 36px;
+  line-height: 42px;
   line-height: normal;
   color: $grey;
 
@@ -206,13 +211,14 @@
 
 .adv__number {
   font-size: 80px;
-  line-height: normal;
+  line-height: 86px;
   color: #D9D9D9;
   @extend %Poiret;
 }
 
 .adv__title {
   font-size: 32px;
+  line-height: 38px;
   @extend %Poiret;
   min-height: 112px;
   margin-bottom: 30px;
@@ -222,7 +228,7 @@
 
 .adv__text {
   font-size: 20px;
-  line-height: normal;
+  line-height: 26px;
   @extend %Poiret;
   color: $white;
 }
@@ -301,6 +307,7 @@
 .group__text {
   margin-bottom: 30px;
   font-size: 20px;
+  line-height: 26px;
 }
 
 .tetatet__text-padding--bottom {
@@ -350,6 +357,7 @@
   color: $white;
   margin-bottom: 50px;
   font-size: 64px;
+  line-height: 72px;
 }
 
 .onebonus__item-text,
@@ -384,7 +392,7 @@
 .twobonus__item-price {
   @extend %Poiret;
   font-size: 20px;
-  line-height: normal;
+  line-height: 26px;
 
 }
 
@@ -403,6 +411,7 @@
   transform: rotate(-10deg);
   @extend %Bad;
   font-size: 24px;
+  // line-height: 30px;
   width: 450px;
 }
 
@@ -426,6 +435,7 @@
   transform: rotate(-10deg);
   @extend %Bad;
   font-size: 24px;
+  // line-height: 30px;
   width: 450px;
 }
 
@@ -474,6 +484,7 @@
 .problems__title {
   @extend %Poiret;
   font-size: 32px;
+  line-height: 38px;
   margin-bottom: 50px;
 }
 
@@ -494,6 +505,7 @@
 .problems__main-title {
   @extend %Poiret;
   font-size: 32px;
+  line-height: 38px;
   // font-weight: bold;
   max-width: 340px;
   text-align: center;
@@ -503,6 +515,7 @@
 
 .problems__text {
   font-size: 20px;
+  line-height: 26px;
   @extend %Poiret;
 }
 
@@ -518,6 +531,7 @@
 .contacts__text {
   margin-bottom: 100px;
   font-size: 32px;
+  line-height: 38px;
   @extend %Poiret;
 }
 
@@ -567,6 +581,7 @@
 
 .price__title {
   font-size: 64px;
+  line-height: 70px;
   margin-bottom: 50px;
   @extend %Poiret;
   color: $white;
@@ -582,18 +597,21 @@
   width: 100%;
   @extend %Poiret;
   font-size: 32px;
+  line-height: 38px;
   color: $white;
 
 }
 
 .price__price {
   font-size: 48px;
+  line-height: 54px;
 }
 
 .price__text-sale {
   margin-right: 50px;
   padding: 0 10px;
   font-size: 32px;
+  // line-height: 38px;
   color: $white;
   @extend %Bad;
   transform: rotate(-10deg);
@@ -653,6 +671,7 @@
 .about__item-text {
   margin: 50px;
   font-size: 20px;
+  line-height: 26px;
   @extend %Poiret;
 }
 
@@ -690,6 +709,7 @@
   color: $white;
   @extend %Poiret;
   font-size: 48px;
+  line-height: 54px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -729,6 +749,7 @@
   color: $white;
   @extend %Poiret;
   font-size: 48px;
+  line-height: 54px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -798,6 +819,7 @@
   bottom: 0;
   @extend %Poiret;
   font-size: 32px;
+  line-height: 38px;
   padding: 12px;
   background: rgba(255, 255, 255, 0.60);
   backdrop-filter: blur(5px);
@@ -807,12 +829,14 @@
 .events__item-title {
   @extend %Poiret;
   font-size: 32px;
+  line-height: 38px;
   margin-bottom: 10px;
 }
 
 .events__item-text {
   @extend %Poiret;
   font-size: 20px;
+  line-height: 26px;
 }
 
 .events-btn {
@@ -856,6 +880,7 @@
 .reviews__slider-item-text {
   @extend %Poiret;
   font-size: 20px;
+  line-height: 26px;
   color: $grey;
 }
 
@@ -908,6 +933,7 @@
   @extend %Poiret;
   color: $grey;
   font-size: 32px;
+  line-height: 38px;
   position: relative;
 }
 
@@ -947,7 +973,7 @@
 
 .questions__item-text {
   font-size: 20px;
-  line-height: 23px;
+  line-height: 26px;
   color: $grey;
   padding-top: 30px;
   display: none;
@@ -1029,6 +1055,7 @@
   width: 250px;
   @extend %Poiret;
   font-size: 18px;
+  line-height: 24px;
   border: 1px solid $grey;
   border-radius: 3px;
 }
@@ -1073,6 +1100,7 @@
 .application__phone,
 .application__email {
   font-size: 24px;
+  line-height: 30px;
   @extend %Poiret;
   color: $grey;
 }
@@ -1086,6 +1114,7 @@
   color: $white;
   @extend %Poiret;
   font-size: 20px;
+  line-height: 26px;
   padding: 50px 0;
 }
 
@@ -1108,10 +1137,12 @@
   margin-bottom: 30px;
   margin-top: 30px;
   font-size: 16px;
+  line-height: 22px;
 }
 
 .lapki-link {
   font-size: 16px;
+  line-height: 22px;
   transition: all .3s;
   border-bottom: 1px solid transparent;
 
@@ -1152,6 +1183,7 @@
 .footer__item-title {
   @extend %Bad;
   font-size: 32px;
+  line-height: 38px;
   margin-bottom: 40px;
 }
 

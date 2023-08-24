@@ -16,6 +16,7 @@
 
   .menu__list {
     font-size: 20px;
+    line-height: 26px;
     padding-top: 23px;
 
     &+.menu__list {
@@ -25,6 +26,7 @@
 
   .screen__item-center--text {
     font-size: 24px;
+    // line-height: 30px;
     bottom: 250px;
   }
 
@@ -86,15 +88,18 @@
 
   .screen__name {
     font-size: 36px;
+    line-height: 42px;
   }
 
   .screen__title {
     font-size: 64px;
+    line-height: 70px;
     margin-bottom: 40px;
   }
 
   .adv__number {
     font-size: 64px;
+    line-height: 70px;
   }
 
   .tetatet__item-text {
@@ -129,15 +134,18 @@
 
   .problems__main-title {
     font-size: 48px;
+    line-height: 54px;
     max-width: 500px;
   }
 
   .problems__title {
     font-size: 38px;
+    line-height: 44px;
   }
 
   .problems__text {
     font-size: 32px;
+    line-height: 38px;
   }
 
   .problems__item-3,
@@ -156,6 +164,7 @@
 
   .price__title {
     font-size: 48px;
+    line-height: 54px;
     margin-bottom: 30px;
   }
 
@@ -369,12 +378,14 @@
   .onebonus__item-title,
   .twobonus__item-title {
     font-size: 48px;
+    line-height: 54px;
     margin-bottom: 30px;
   }
 
   .onebonus__item-list,
   .twobonus__item-list {
     font-size: 20px;
+    line-height: 26px;
   }
 
   .problems__item {
@@ -418,10 +429,13 @@
 
   .offer__title {
     font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
 
   .offer__text {
     font-size: 20px;
+    line-height: 26px;
   }
 
   .adv {
@@ -451,14 +465,17 @@
 
   .problems__main-title {
     font-size: 38px;
+    line-height: 44px;
   }
 
   .problems__title {
     font-size: 32px;
+    line-height: 36px;
   }
 
   .problems__text {
     font-size: 24px;
+    line-height: 30px;
   }
 
   // .stages__inner {
@@ -473,6 +490,7 @@
   .contacts__text {
     margin-bottom: 100px;
     font-size: 24px;
+    line-height: 30px;
     @extend %Poiret;
   }
 
@@ -536,11 +554,11 @@
   }
 
   .footer__item-3 {
-    margin-top: -20px;
+    // margin-top: -20px;
   }
 
   .footer__item-title {
-    margin-bottom: 7px;
+    margin-bottom: 18px;
   }
 
   .footer__item-social {
@@ -586,15 +604,18 @@
 
   .problems__main-title {
     font-size: 38px;
+    line-height: 44px;
     max-width: 400px;
   }
 
   .problems__title {
     font-size: 32px;
+    line-height: 38px;
   }
 
   .problems__text {
     font-size: 20px;
+    line-height: 26px;
   }
 
   .stages__inner {
@@ -604,10 +625,12 @@
   .price__title {
     margin-bottom: 50px;
     font-size: 32px;
+    line-height: 38px;
   }
 
   .price__text {
     font-size: 20px;
+    line-height: 26px;
     max-width: 320px;
   }
 
@@ -623,6 +646,7 @@
 
   .price__price {
     font-size: 40px;
+    line-height: 36px;
   }
 
   // .price__right{
@@ -654,6 +678,7 @@
 
   .application__item-title {
     font-size: 32px;
+    line-height: 38px;
   }
 
   .application__item-left--text {
@@ -721,7 +746,7 @@
 
   .adv {
     padding-bottom: 30px;
-    background-image: none;
+    background-image: none !important;
   }
 
 
@@ -777,15 +802,18 @@
 
   .problems__main-title {
     font-size: 38px;
+    line-height: 44px;
     max-width: 400px;
   }
 
   .problems__title {
     font-size: 32px;
+    line-height: 38px;
   }
 
   .problems__text {
     font-size: 20px;
+    line-height: 26px;
   }
 
   .problems__inner {
@@ -805,6 +833,7 @@
     margin-right: auto;
     text-align: left;
     font-size: 32px;
+    line-height: 38px;
   }
 
   .problems__item-3,
@@ -855,10 +884,12 @@
 @media(max-width: 800px) {
   .screen__name {
     font-size: 24px;
+    line-height: 30px;
   }
 
   .screen__title {
     font-size: 48px;
+    line-height: 44px;
   }
 
   .screen__left {
@@ -880,10 +911,12 @@
 
   .offer__title {
     font-size: 20px;
+    line-height: 26px;
   }
 
   .offer__text {
     font-size: 18px;
+    line-height: 24px;
   }
 
   .tetatet__inner,
@@ -902,6 +935,7 @@
     padding: 30px 40px 0px 40px;
     max-width: fit-content;
     font-size: 32px;
+    line-height: 38px;
     text-align: left;
     margin-bottom: 30px;
   }
@@ -949,6 +983,7 @@
 
   .contacts__text {
     font-size: 20px;
+    line-height: 26px;
   }
 
   .contacts__inner {
@@ -1016,6 +1051,7 @@
 @media(max-width: 700px) {
   .title {
     font-size: 32px;
+    line-height: 38px;
   }
 
   .container {
@@ -1025,17 +1061,24 @@
   .screen__left {
     width: 240px;
   }
+  .offer__title{
+    margin-bottom: 24px;
+    line-height: 26px;
+  }
 
   .adv__number {
     font-size: 48px;
+    line-height: 54px;
   }
 
   .adv__title {
     font-size: 24px;
+    line-height: 30px;
   }
 
   .adv__text {
     font-size: 18px;
+    line-height: 24px;
   }
 
   .tetatet__item-box,
@@ -1057,6 +1100,7 @@
   .tetatet__text,
   .group__text {
     font-size: 18px;
+    line-height: 24px;
   }
 
   .onebonus__item-1,
@@ -1067,16 +1111,19 @@
   .onebonus__item-title,
   .twobonus__item-title {
     font-size: 32px;
+    line-height: 38px;
   }
 
   .onebonus__item-list,
   .twobonus__item-list {
     font-size: 18px;
+    line-height: 24px;
   }
 
   .onebonus__item-price,
   .twobonus__item-price {
     font-size: 18px;
+    line-height: 24px;
   }
 
   .onebonus__item-list,
@@ -1101,10 +1148,12 @@
   .problems__title,
   .problems__main-title {
     font-size: 24px;
+    line-height: 30px;
   }
 
   .problems__text {
     font-size: 18px;
+    line-height: 24px;
   }
 
   .price__right {
@@ -1144,6 +1193,7 @@
 
   .events__item-title {
     font-size: 24px;
+    line-height: 30px;
   }
 
   .events {
@@ -1152,6 +1202,7 @@
 
   .events__item-img--data {
     font-size: 24px;
+    line-height: 30px;
   }
 
   .reviews__inner {
@@ -1181,6 +1232,7 @@
 
   .questions__item-title--text {
     font-size: 24px;
+    line-height: 30px;
   }
 }
 
@@ -1206,11 +1258,13 @@
 
   .screen__name {
     font-size: 20px;
+    line-height: 26px;
     margin-bottom: 0;
   }
 
   .screen__title {
     font-size: 36px;
+    line-height: 42px;
     margin-bottom: 20px;
   }
 
@@ -1388,10 +1442,10 @@
   }
   .footer__item-link--poliсy{
     position: absolute;
-    bottom: -212px;
+    bottom: -228px;
   }
   .footer__item-title{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .footer__item-social{
     margin-bottom: 30px;
