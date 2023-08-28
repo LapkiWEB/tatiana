@@ -3805,7 +3805,7 @@
   animation-name: slideOutUp;
 }
 @charset "UTF-8";
-.policy__text, .policy__title-subtitle, .footer, .application__phone,
+.error__text, .error__title, .policy__text, .policy__title-subtitle, .footer, .application__phone,
 .application__email, .form__item,
 .form__item-box, .questions__item-title--text, .reviews__slider-item-text, .reviews__item-title, .events__item-text, .events__item-title, .events__item-img--data, .diplomas__title, .video__title, .about__item-text, .price__text, .price__title, .contacts__text, .problems__text, .problems__main-title, .problems__title, .onebonus__item-price,
 .twobonus__item-price, .adv__text, .adv__title, .adv__number, .screen__title, .screen__name, .menu__list, .main-btn, .title, html,
@@ -4049,7 +4049,7 @@ body {
   border-radius: 5px;
 }
 .menu__btn.active .row {
-  height: 2px;
+  height: 5px;
 }
 .menu__btn.active .row1 {
   -webkit-transform: rotate(45deg);
@@ -4066,7 +4066,7 @@ body {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   position: relative;
-  top: -1px;
+  top: -4px;
   background-color: #ffffff;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -4076,9 +4076,10 @@ body {
 }
 
 .row {
-  width: 30px;
+  width: 35px;
+  border: 1px solid #252525;
   background-color: #252525;
-  height: 2px;
+  height: 5px;
   border-radius: 5px;
   display: block;
   margin-bottom: 6px;
@@ -4089,8 +4090,8 @@ body {
 }
 
 .row3 {
-  width: 20px;
-  margin-left: 20px;
+  width: 24px;
+  margin-left: 18px;
 }
 
 .mobil__social {
@@ -5390,6 +5391,42 @@ body {
   margin-bottom: 50px;
 }
 
+.error {
+  background-color: #252525;
+  height: 80vh;
+}
+
+.error__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.error__box__wrapper {
+  width: 100%;
+}
+
+.error__title {
+  color: #ffffff;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 160px;
+}
+
+.error__text {
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1850px) {
   .screen__right {
     width: 808px;
@@ -6073,6 +6110,9 @@ body {
   .reviews__slider-item {
     max-height: 350px;
   }
+  .error__title {
+    font-size: 80px;
+  }
 }
 @media (max-width: 900px) {
   .problems__item {
@@ -6540,6 +6580,15 @@ body {
     max-width: 350px;
     width: 100%;
     height: 150px;
+  }
+  .error__title {
+    font-size: 64px;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+  .error__text {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 @media (max-width: 500px) {
