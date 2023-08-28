@@ -149,10 +149,10 @@
                 психолог
               </h1>
               <div class="screen__box">
-                <div class="screen__btn main-btn black-btn ">
+                <div data-modal class="screen__btn main-btn black-btn animate__animated animate__fadeInUp">
                   Оставить заявку
                 </div>
-                <a href="#" class="screen__btn main-btn white-btn">
+                <a href="#" class="screen__btn main-btn white-btn animate__animated animate__fadeInUp animate__delay-1s">
                   Сделать звонок
                 </a>
               </div>
@@ -194,12 +194,12 @@
                       </a>
                     </li>
                   </ul>
-                  <p class="screen__item-center--text">
+                  <p class="screen__item-center--text animate__animated animate__flash animate__delay-2s">
                     Разблокируй
                     <br>
                     свой потенциал!
                   </p>
-                  <img class="screen__item-center--img " src="images/content/screen__item-center--img.jpg" alt="">
+                  <img class="screen__item-center--img animate__animated animate__fadeInRight animate__delay-1s" src="images/content/screen__item-center--img.jpg" alt="">
                 </div>
                 <div class="screen__item screen__item-right"></div>
 
@@ -385,7 +385,7 @@
               <br>
               Индивидуальная консультация поможет Вам найти ответы на эти вопросы и обрести гармонию в жизни.
             </p>
-            <div class="tetatet__btn main-btn black-btn ">
+            <div data-modal class="tetatet__btn main-btn black-btn ">
               Оставить заявку
             </div>
           </div>
@@ -434,7 +434,7 @@
               </li>
             </ul>
             <div class="onebonus__item-box">
-              <div class="onebonus__btn main-btn white-btn">
+              <div data-modal class="onebonus__btn main-btn white-btn">
                 Записаться
               </div>
               <p class="onebonus__item-price">
@@ -509,7 +509,7 @@
               материал,
               психологические упражнения, задания, игры и обсуждения на различные темы.
             </p>
-            <div class="tetatet__btn main-btn black-btn ">
+            <div data-modal class="tetatet__btn main-btn black-btn ">
               Узнать подробнее
             </div>
           </div>
@@ -573,11 +573,11 @@
               </li>
             </ul>
             <div class="twobonus__item-box">
-              <div class="twobonus__btn main-btn white-btn">
+              <div data-modal class="twobonus__btn main-btn white-btn">
                 Записаться
               </div>
               <p class="twobonus__item-price">
-                5000 руб/сеанс
+                5000 руб/месяц
               </p>
             </div>
 
@@ -654,7 +654,7 @@
             </div>
           </div>
           <div class="stages__box">
-            <div class="stages__btn main-btn black-btn">
+            <div data-modal class="stages__btn main-btn black-btn">
               Записаться
             </div>
           </div>
@@ -673,7 +673,7 @@
             </video>
           </div>
         </div>
-        <div class="video-btn main-btn white-btn">
+        <div data-modal class="video-btn main-btn white-btn">
           Задать вопрос
         </div>
       </section>
@@ -781,7 +781,7 @@
               Именно поэтому мы работаем вместе на каждом этапе вашего развития и преодоления препятствий.
             </p>
 
-            <div class="problems__btn main-btn black-btn">
+            <div data-modal class="problems__btn main-btn black-btn">
               Записаться
             </div>
           </div>
@@ -879,7 +879,7 @@
                     2000 руб
                   </span>
                 </div>
-                <div class="price__btn main-btn white-btn">
+                <div data-modal class="price__btn main-btn white-btn">
                   Оставить заявку
                 </div>
               </div>
@@ -906,7 +906,7 @@
                     1250 руб
                   </span>
                 </div>
-                <div class="price__btn main-btn white-btn">
+                <div data-modal class="price__btn main-btn white-btn">
                   Оставить заявку
                 </div>
               </div>
@@ -1126,7 +1126,7 @@
               </p>
             </div>
           </div>
-          <div class="events-btn main-btn black-btn">
+          <div data-modal class="events-btn main-btn black-btn">
             Записаться
           </div>
         </div>
@@ -1222,7 +1222,7 @@
               </div>
 
             </div>
-            <div class="reviews-btn main-btn black-btn">
+            <div data-modal class="reviews-btn main-btn black-btn">
               Записаться
             </div>
           </div>
@@ -1396,7 +1396,7 @@
             </div>
 
           </div>
-          <div class="questions-btn main-btn black-btn">
+          <div data-modal class="questions-btn main-btn black-btn">
             Задать вопрос
           </div>
         </div>
@@ -1598,6 +1598,53 @@
         </div>
       </div>
     </footer>
+
+
+<div class="modal">
+  <div class="modal__inner">
+    <div class="container">
+      <div class="modal__wrapper">
+
+        <ul data-close class="close__btn">
+          <li class="close__line close__line1"></li>
+          <li class="close__line close__line2"></li>
+        </ul>
+
+        <h2 class="modal__title title">
+          Оставить заявку
+        </h2>
+
+        <form class="form">
+          <div class="form__wrapper">
+            <div class="form__inner">
+              <div class="form__item">
+                <input type="text" class="form__item-input" placeholder="Имя">
+              </div>
+              <div class="form__item">
+                <input type="text" class="form__item-input" placeholder="Телефон">
+              </div>
+            </div>
+            <div class="form__item-box">
+              <textarea name="text" class="form__item-box-text" placeholder="Сообщение"></textarea>
+            </div>
+          </div>
+          <div class="form-btn__wrapper">
+            <button class="form-btn main-btn black-btn" type="submit">
+              Отправить
+            </button>
+          </div>
+        
+        
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   </div>
 
   <script src="js/main.min.js"></script>

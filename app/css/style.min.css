@@ -4161,6 +4161,79 @@ body {
   height: 100px;
 }
 
+.modal {
+  position: fixed;
+  z-index: 150;
+  background-color: #ffffff;
+  display: none;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+}
+
+.modal__inner {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal__wrapper {
+  position: relative;
+}
+
+.modal__title {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.close__btn {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  cursor: pointer;
+}
+
+.close__line {
+  width: 30px;
+  background-color: #252525;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.close__line1 {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 6px;
+}
+
+.close__line2 {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -3px;
+}
+
+.show {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
 @font-face {
   font-family: "PoiretOne-Regular";
   src: url("../fonts/PoiretOne-Regular.eot");
