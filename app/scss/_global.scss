@@ -91,12 +91,69 @@ body {
 .black-btn {
   color: $white;
   background-color: $grey;
+  transition: all .3s;
+  // border: 1px solid transparent;
+
+  &:hover {
+    color: $grey;
+    background-color: $white;
+  }
 }
 
 .white-btn {
   color: $grey;
   background-color: $white;
+  transition: all .3s;
+  // border: 1px solid transparent;
+
+  &:hover {
+    color: $white;
+    background-color: $grey;
+  }
 }
+
+.onebonus__btn,
+.twobonus__btn,
+.video-btn,
+.price__btn {
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid $white;
+    color: $white;
+    background-color: $grey;
+  }
+}
+
+
+
+.social__list-link,
+.tetatet__social-list--link {
+  &:hover {
+    rect {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: draw 5s linear forwards;
+    }
+
+    path {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: draw 5s linear forwards;
+    }
+  }
+}
+
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
 
 
 
@@ -162,28 +219,28 @@ body {
 
 
 
-  .slick-dots {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    list-style: none;
+.slick-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 
-    button {
-      background-color: transparent;
-      border: 1px solid $white;
-      border-radius: 50%;
-      height: 15px;
-      width: 15px;
-      margin: 20px 10px;
-      font-size: 0;
-      margin-bottom: 0;
-      cursor: pointer;
-    }
+  button {
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 20px 10px;
+    font-size: 0;
+    margin-bottom: 0;
+    cursor: pointer;
   }
+}
 
-  .slick-dots li[class="slick-active"] button {
-    background-color: $white;
-  }
+.slick-dots li[class="slick-active"] button {
+  background-color: $white;
+}
 
 
 .reviews__inner {

@@ -1201,4 +1201,25 @@
 
 // end footer
 
+// start section policy
+.policy__title{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.policy__title-subtitle{
+  font-size: 24px;
+  line-height: 30px;
+  @extend %Poiret;
+  margin-bottom: 30px;
+}
+.policy__text{
+  font-size: 20px;
+  line-height: 26px;
+  @extend %Poiret;
+}
+.policy__box{
+  margin-bottom: 50px;
+}
+// end section policy
+
 @import 'media';
