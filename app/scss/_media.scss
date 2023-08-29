@@ -639,9 +639,9 @@
   }
 
   .price__text-sale--line {
-    &::before {
+    // &::before {
       top: 20px;
-    }
+    // }
   }
 
   .price__price {
@@ -1008,7 +1008,7 @@
 
   .about__item-img {
     height: 100vw;
-    width: 100vw;
+    width: 100%;
     // max-width: 100%;
     // width: 100%;
   }

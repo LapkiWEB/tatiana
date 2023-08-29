@@ -4,7 +4,7 @@ body {
   @extend %Poiret;
   color: $grey;
   position: relative;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   margin: 0 auto;
   background-color: $white;
   font-size: 24px;
@@ -358,4 +358,45 @@ body {
 
 .hide {
   display: none;
+}
+
+
+
+.up-button{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 254, 254, 0.9);
+  border-radius: 50%;
+  border: 3px solid $grey;
+  color: $grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  cursor: pointer;
+  opacity: 0;
+}
+.up-button__text{
+  @extend %Bad;
+  font-size: 24px;
+  line-height: 30px;
+  position: relative;
+  transform: rotate(-10deg);
+  bottom: -10px;
+  &::before{
+    transform: rotate(10deg);
+    position: absolute;
+    content: '';
+    background-image: url('../images/icons/up-arrow.svg');
+    width: 26px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -25px;
+    right: 4px;
+
+  }
 }

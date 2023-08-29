@@ -3815,7 +3815,7 @@ body {
   display: swap;
 }
 
-.footer__item-title, .application__item-left .application__item-left--text, .price__text-sale, .twobonus__item-1--text, .onebonus__item-2--text, .tetatet__social::before, .offer__title, .screen__item-center--text {
+.footer__item-title, .application__item-left .application__item-left--text, .price__text-sale, .twobonus__item-1--text, .onebonus__item-2--text, .tetatet__social-text, .offer__title, .screen__item-center--text, .up-button__text {
   font-family: "BadScript-Regular", sans-serif;
   font-weight: normal;
   display: swap;
@@ -3885,7 +3885,6 @@ body {
   height: 100%;
   color: #252525;
   position: relative;
-  overflow-x: hidden;
   margin: 0 auto;
   background-color: #ffffff;
   font-size: 24px;
@@ -4234,6 +4233,54 @@ body {
   display: none;
 }
 
+.up-button {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 254, 254, 0.9);
+  border-radius: 50%;
+  border: 3px solid #252525;
+  color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.up-button__text {
+  font-size: 24px;
+  line-height: 30px;
+  position: relative;
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  bottom: -10px;
+}
+.up-button__text::before {
+  -webkit-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
+  position: absolute;
+  content: "";
+  background-image: url("../images/icons/up-arrow.svg");
+  width: 26px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: -25px;
+  right: 4px;
+}
+
 @font-face {
   font-family: "PoiretOne-Regular";
   src: url("../fonts/PoiretOne-Regular.eot");
@@ -4310,6 +4357,7 @@ body {
 
 .screen {
   margin-top: -125px;
+  overflow-x: hidden;
 }
 
 .screen__wrapper {
@@ -4525,8 +4573,17 @@ body {
 .tetatet__social {
   position: relative;
 }
-.tetatet__social::before {
-  content: "Напишите мне";
+
+.tetatet__social-arrow {
+  position: absolute;
+  left: -50px;
+  top: -30px;
+  background-image: url("../images/icons/tetatet-arrow.png");
+  width: 47px;
+  height: 47px;
+}
+
+.tetatet__social-text {
   -webkit-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
@@ -4534,14 +4591,15 @@ body {
   left: -125px;
   top: -70px;
 }
-.tetatet__social::after {
-  content: "";
-  position: absolute;
-  left: -50px;
-  top: -30px;
-  background-image: url("../images/icons/tetatet-arrow.png");
-  width: 47px;
-  height: 47px;
+.tetatet__social-text span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: -8px;
+  letter-spacing: 0;
+}
+.tetatet__social-text .indent {
+  margin: 0 5px;
 }
 
 .tetatet__text,
@@ -4862,14 +4920,11 @@ body {
   -webkit-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
+  position: relative;
 }
 
 .price__text-sale--line {
-  position: relative;
-}
-.price__text-sale--line::before {
   position: absolute;
-  content: "";
   width: 100%;
   height: 2px;
   background-color: #ffffff;
@@ -6057,7 +6112,7 @@ body {
   .price__text-sale {
     font-size: 20px;
   }
-  .price__text-sale--line::before {
+  .price__text-sale--line {
     top: 20px;
   }
   .price__price {
@@ -6379,7 +6434,7 @@ body {
   }
   .about__item-img {
     height: 100vw;
-    width: 100vw;
+    width: 100%;
   }
   .about__item-painting {
     grid-column-start: span 1;

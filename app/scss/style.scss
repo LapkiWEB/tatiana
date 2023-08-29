@@ -68,7 +68,7 @@
 // start section screen
 .screen {
   margin-top: -125px;
-
+  overflow-x: hidden;
 }
 
 .screen__wrapper {
@@ -281,26 +281,34 @@
 
 .tetatet__social {
   position: relative;
+}
 
-  &::before {
-    content: 'Напишите мне';
-    @extend %Bad;
-    transform: rotate(-10deg);
-    position: absolute;
-    left: -125px;
-    top: -70px;
+.tetatet__social-arrow {
+  position: absolute;
+  left: -50px;
+  top: -30px;
+  background-image: url('../images/icons/tetatet-arrow.png');
+  width: 47px;
+  height: 47px;
+}
 
+.tetatet__social-text {
+  @extend %Bad;
+  transform: rotate(-10deg);
+  position: absolute;
+  left: -125px;
+  top: -70px;
+
+  span {
+    width: fit-content;
+    margin-left: -8px;
+    letter-spacing: 0;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: -50px;
-    top: -30px;
-    background-image: url('../images/icons/tetatet-arrow.png');
-    width: 47px;
-    height: 47px;
+  .indent {
+    margin: 0 5px;
   }
+
 }
 
 .tetatet__text,
@@ -611,28 +619,25 @@
   margin-right: 50px;
   padding: 0 10px;
   font-size: 32px;
-  // line-height: 38px;
   color: $white;
   @extend %Bad;
   transform: rotate(-10deg);
+  position: relative;
 }
 
 .price__text-sale--line {
-  position: relative;
-
-  &::before {
     position: absolute;
-    content: '';
     width: 100%;
     height: 2px;
     background-color: $white;
     top: 33px;
     left: 0;
     transform: rotate(-1deg);
-  }
 }
 
+.price__text-sale--border{
 
+}
 
 
 
@@ -1202,62 +1207,72 @@
 // end footer
 
 // start section policy
-.policy__title{
+.policy__title {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.policy__title-subtitle{
+
+.policy__title-subtitle {
   font-size: 24px;
   line-height: 30px;
   @extend %Poiret;
   margin-bottom: 30px;
 }
-.policy__text{
+
+.policy__text {
   font-size: 20px;
   line-height: 26px;
   @extend %Poiret;
 }
-.policy__box{
+
+.policy__box {
   margin-bottom: 50px;
 }
+
 // end section policy
 
 // start str error
-.error{
+.error {
   background-color: $grey;
-  
+
   height: 80vh;
   // height: 100%;
 }
-.error__box{
+
+.error__box {
   display: flex;
   align-items: center;
   height: 80vh;
   text-align: center;
 
 }
-.error__box__wrapper{
+
+.error__box__wrapper {
   width: 100%;
 }
-.error__title{
+
+.error__title {
   color: $white;
   @extend %Poiret;
   margin: 0 auto;
   width: fit-content;
   font-size: 160px;
 }
-.error__text{
+
+.error__text {
   @extend %Poiret;
   font-size: 32px;
   line-height: 38px;
   color: $white;
   margin-bottom: 30px;
 }
-.error__btn{
+
+.error__btn {
   // margin: 0 auto;
   // width: fit-content;
   // text-align: center;
 }
+
 // end str error
 
 @import 'media';
