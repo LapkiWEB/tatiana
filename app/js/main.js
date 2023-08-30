@@ -1,7 +1,18 @@
 new WOW().init();
 
+let btn = document.querySelector('.up-button'),
+  btn2 = document.querySelector('.modal-contact')
+function magic() {
+  if (window.pageYOffset > 1500) {
+    btn.style.opacity = '1',
+      btn2.style.opacity = '1'
 
-
+  } else { btn.style.opacity = '0', btn2.style.opacity = '0' }
+}
+btn.onclick = function () {
+  window.scrollTo(0, 0)
+}
+window.onscroll = magic
 
 
 $(function () {
@@ -41,6 +52,14 @@ $(function () {
       $('.header__menu').removeClass('active');
       $('.menu__btn').removeClass('active');
 
+    }
+  }));
+
+  $('.modal-contact').on('click', (function () {
+    if (!$('.modal-contact').hasClass('modal-contact-active')) {
+      $('.modal-contact').addClass('modal-contact-active');
+    } else {
+      $('.modal-contact').removeClass('modal-contact-active');
     }
   }));
 

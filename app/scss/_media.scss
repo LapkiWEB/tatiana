@@ -640,7 +640,7 @@
 
   .price__text-sale--line {
     // &::before {
-      top: 20px;
+    top: 20px;
     // }
   }
 
@@ -793,7 +793,8 @@
   .reviews__slider-item {
     max-height: 350px;
   }
-  .error__title{
+
+  .error__title {
     font-size: 80px;
   }
 }
@@ -1046,8 +1047,47 @@
   .footer__item-2 {
     max-width: 450px;
   }
-    .footer__item-3{
+
+  .footer__item-3 {
     order: 0;
+  }
+
+  .up-button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .up-button__text {
+    font-size: 18px;
+    line-height: 24px;
+    bottom: -10px;
+
+    &::before {
+      width: 26px;
+      height: 17px;
+      top: -20px;
+      right: 0px;
+
+    }
+  }
+
+  .modal-contact {
+    width: 70px;
+    height: 70px;
+    bottom: 90px;
+  }
+
+  .modal-contact-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal-contact-active {
+    max-width: fit-content;
+    width: 100%;
+ 
+    height: 120px;
+  
   }
 }
 
@@ -1064,7 +1104,8 @@
   .screen__left {
     width: 240px;
   }
-  .offer__title{
+
+  .offer__title {
     margin-bottom: 24px;
     line-height: 26px;
   }
@@ -1332,12 +1373,14 @@
     width: 100%;
     height: 150px;
   }
-  .error__title{
+
+  .error__title {
     font-size: 64px;
     line-height: 70px;
     margin-bottom: 30px;
   }
-  .error__text{
+
+  .error__text {
     font-size: 24px;
     line-height: 30px;
   }
@@ -1437,29 +1480,36 @@
   .application__item-right {
     padding: 30px 15px;
   }
-  .footer{
+
+  .footer {
     padding: 30px 0;
   }
-  .footer__item-1{
+
+  .footer__item-1 {
     margin-bottom: 0;
   }
-  .footer__item-2{
+
+  .footer__item-2 {
     flex-wrap: wrap;
     margin-bottom: 60px;
   }
-  .footer__item-box{
+
+  .footer__item-box {
     max-width: 500px;
     width: 100%;
     position: relative;
   }
-  .footer__item-link--poliсy{
+
+  .footer__item-link--poliсy {
     position: absolute;
     bottom: -228px;
   }
-  .footer__item-title{
+
+  .footer__item-title {
     margin-bottom: 30px;
   }
-  .footer__item-social{
+
+  .footer__item-social {
     margin-bottom: 30px;
   }
 }
